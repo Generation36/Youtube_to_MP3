@@ -2,9 +2,10 @@ Python script that takes youtube links and converts them into downloadadble mp3 
 
 # GETTING STARTED
 1. Setup the Virtual Env
+   
    ``` python -m venv venv```
    
-1. Activate the virtual env with either
+2. Activate the virtual env with either
    
    Linux:
    
@@ -14,14 +15,14 @@ Python script that takes youtube links and converts them into downloadadble mp3 
    
    ``` .\venv\Scripts\Activate.ps1 ```
    
-2. Install all dependencies:
+3. Install all dependencies:
    ```pip install -r requirements.txt ```
 
-3. To run the script:
+4. To run the script:
 
    ``` python main.py <youtube_url_link> ```
 
-4. Options:
+5. Options:
 
   - to pass in a list of links using a text file:
 
