@@ -59,14 +59,14 @@ def set_thumbnail(filename: str, thumbnail_url: str) -> None:
         # TODO: Fix the thumbnail not being set
         video = ffmpeg.input(filename)
         cover = ffmpeg.input(thumbnail)
-        (
-            ffmpeg
-            .output(video, cover, filename, c='copy', **{'c:v:1': 'jpg'}, **{'disposition:v:1': 'attached_pic'})
-            .global_args('-map', '0')
-            .global_args('-map', '1')
-            .global_args('-loglevel', 'error')
-            .run()
-        )
+        # (
+        #     ffmpeg
+        #     .output(video, cover, filename, c='copy', **{'c:v:1': 'jpg'}, **{'disposition:v:1': 'attached_pic'})
+        #     .global_args('-map', '0')
+        #     .global_args('-map', '1')
+        #     .global_args('-loglevel', 'error')
+        #     .run()
+        # )
 
 def download_mp4(url: str, output_path: str, filename: str | None) -> None:
     # create a temp folder to store the mp4 files
